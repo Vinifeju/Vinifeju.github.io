@@ -1,0 +1,130 @@
+// main: ../main.less
+
+@import "../vars.less";
+@import "../mixins.less";
+
+header {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.header{
+
+    display: flex;
+    min-height: @header-width;
+    background-color: @dark-color;
+    position: relative;
+
+    transition: 0.2s;
+    overflow: hidden;
+
+    &-navigation {
+        display: flex;
+        align-items: center;
+
+        &-nav {
+            display: flex;
+        }
+        
+        @media(max-width: 770px) {
+            &-nav {
+                display: none;
+            }
+        }
+    }
+
+
+    &-mobile-burger-menu {
+
+        .flexMiddle();
+
+        position: relative;
+        
+        left: 10%;
+        top: 5px;
+
+
+
+        @media(min-width: 771px) {
+            & {
+                display: none;
+            }
+        }
+    }
+
+    & .mobile-btn {
+
+        color: #fff;
+        font-size: 1.8em;
+        width: 50px;
+        height: 50px;
+
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 5px;
+
+        .flexMiddle();
+
+    }
+
+    & .mobile-btn:hover {
+        background-color: darken(@dark-color, 10%);
+    }
+
+    &-mobile-navigation-nav {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        overflow: hidden;
+        top: 95%;
+        height: 0px;
+        background-color: @dark-color;
+        transition: 0.3s ease-in;
+    }
+
+    & .header-photo {
+
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 50px;
+
+        & .photo {
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+        }
+    }
+
+
+
+
+    .item-nav {
+
+        .flexMiddle();
+
+
+        border-radius: 5px;
+
+        min-width: 50px;
+        min-height: 50px;
+
+        transition: 0.2s;
+        margin: 1.5em;
+        color: #fff;
+    }
+
+    .item-nav:hover {
+        background-color: darken(@dark-color, 10%);
+    }
+
+    
+    &-mobile-burger-menu:hover .header-mobile-navigation-nav{
+        height: 300%;
+    }
+
+    &-mobile-burger-menu:hover .mobile-btn{
+        background-color: darken(@dark-color, 10%);
+    }
+}

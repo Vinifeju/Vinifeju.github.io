@@ -1,0 +1,98 @@
+//main: ../main.less
+
+@import "../vars.less";
+@import "../mixins.less";
+
+.modal-block {
+    display: none;
+    
+    position: fixed;
+    z-index: 99;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 60%;
+    height: 385px;
+
+    .modal-header {
+        
+        position: relative;
+
+        .flexMiddle();
+
+        width: 100%;
+        height: 50px;
+
+        background-color: lighten(fade(@dark-color, 100%), 5%);
+        color: #fff;
+
+        font-family: 'Sen', sans-serif;
+
+        .modal-h-close-btn {
+            position: absolute;
+            right: 30px;
+
+            .flexMiddle();
+
+            cursor: pointer;
+
+            width: 30px;
+            height: 30px;
+
+            border-radius: 5px;
+            transition: 0.5s;
+
+            font-weight: normal;
+            font-size: 30px;
+
+            &:hover {
+                background-color: darken(@dark-color, 10%);
+            }
+        }
+    }
+
+    .modal-body {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        background-color: lighten(fade(@dark-color, 100%), 5%);
+    }
+}
+
+
+//js animation
+
+.modal-block {
+
+    transition: 0.2s;
+
+    &-enter {
+        opacity: 0;
+        transition: 0.1s;
+        transform: scale(1.3);
+    }
+
+    &-enter-active {
+        transform: scale(1.3);
+        transition: 0.1s;
+        opacity: 1;
+    }
+
+
+    &-leave-active {
+
+        transition: 0.1s;
+        opacity: 0.5;
+    }
+
+    &-leave-to {
+        opacity: 0.5;
+        transition: 0.1s;
+    }
+}

@@ -1,0 +1,49 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fas,
+.fa,
+.far,
+.fab {
+    font-family: 'FontAwesome' !important;
+    font-style: normal !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+html {
+
+    height: 100%;
+    -webkit-overflow-scrolling:touch;
+    
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+
+    overflow-x: hidden;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@import "body/body.less";
+@import "head/header.less";
+@import "footer/footer.less";
+
+@import "elements/buttons.less";
+
+@import "modal/modal.less";

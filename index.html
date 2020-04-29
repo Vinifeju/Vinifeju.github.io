@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+  <link rel="stylesheet" href="css/main.less.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/circleBar.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <title>!</title>
+
+  <script src="js/wow.min.js" defer></script>
+
+  <script src="js/modalWindow.js" defer></script>
+  <script src="js/skillTooltip.js" defer></script>
+  <script src="js/pageController.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="header-navigation">
+        <nav class="header-navigation-nav">
+          <a href="#" class="item-nav"><i class="fab fa-vk"></i></a>
+          <a href="#" class="item-nav"><i class="fab fa-github"></i></a>
+          <a href="#" class="item-nav"><i class="fab fa-codepen"></i></a>
+        </nav>
+      </div>
+
+      <div class="header-mobile-burger-menu">
+        <i class="fas fa-bars mobile-btn"></i>
+        <nav class="header-mobile-navigation-nav">
+          <a href="#" class="item-nav"><i class="fab fa-vk"></i></a>
+          <a href="#" class="item-nav"><i class="fab fa-github"></i></a>
+          <a href="#" class="item-nav"><i class="fab fa-codepen"></i></a>
+        </nav>
+      </div>
+
+      <div class="header-photo">
+        <img class="photo" src="img/fractal-removebg-preview.png" alt="image">
+      </div>
+    </div>
+  </header>
+  <div class="modal-block">
+    <div class="modal-header">
+      <p class="modal-h-text">Calendar</p>
+      <p class="modal-h-close-btn">&times;</p>
+    </div>
+    <div class="modal-body">
+    </div>
+  </div>
+  <main>
+    <div class="main-block">
+      <div class="section welcome">
+        <div class="welcome-text">
+          <h1>Hello</h1>
+        </div>
+
+        <div class="welcome-down-arrow">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+      <div class="sections">
+        <div class="section first-sec">
+          <p class="sec-main-text spec-text">My Speciality</p>
+          <div class="speciality-container wow bounceIn">
+            <div class="speciality-block">
+              <img src="svg/code (2).svg" class="spec-img" alt="frontend">
+              <div class="spec-info">
+                <p class="sec-main-text spec-text">Frontend</p>
+              </div>
+            </div>
+
+            <div class="speciality-block">
+              <img src="svg/professions-and-jobs (1).svg" class="spec-img" alt="Web Develop">
+              <div class="spec-info">
+                <p class="sec-main-text spec-text">Web Develop</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section section-light section-using">
+          <p class="sec-main-text">Im Using</p>
+          <div class="using-container wow bounceIn">
+            <div class="using-block">
+              <img src="svg/less-seeklogo.com.svg" alt="">
+              <div class="using-info">
+                <p class="sec-main-text">LESS</p>
+              </div>
+            </div>
+            <div class="using-block">
+              <img src="svg/react.svg" alt="">
+               <div class="using-info">
+                <p class="sec-main-text">ReactJS</p>
+              </div>
+            </div>
+            <div class="using-block">
+              <img src="svg/nodejs.svg" alt="">
+                <div class="using-info">
+                <p class="sec-main-text">NodeJS</p>
+              </div>
+            </div>
+            <div class="using-block">
+              <img src="svg/iconfinder_mongodb_1012822.svg" alt="">
+                <div class="using-info">
+                <p class="sec-main-text">MongoDB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section section-skills">
+          <p class="sec-main-text">My Skills</p>
+          <div class="card-container wow slideInLeft">
+          <div class="card html-card">
+            <div class="box">
+              <div class="percent">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+              </div>
+              <div class="number">
+                <p>90%</p>
+              </div>
+              <div class="title">
+                <p>HTML</p>
+              </div>
+            </div>
+          </div>
+          <div class="card css-card">
+            <div class="box">
+              <div class="percent">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+              </div>
+              <div class="number">
+                <p>85%</p>
+              </div>
+              <div class="title">
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>
+          <div class="card js-card">
+            <div class="box">
+              <div class="percent">
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+              </div>
+              <div class="number">
+                <p>90%</p>
+              </div>
+              <div class="title">
+                <p>JavaScript</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="section section-light last-section">
+          <div class="block-proj">
+            <p class="sec-main-text">My Contacts</p>
+            <div class="projects-block">
+              <div class="sec-block" data-proj-name="Calendar"><i class="fas fa-envelope"></i></div>
+              <div class="sec-block">-</div>
+              <div class="sec-block">-</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-block"></div>
+  </footer>
+</body>
+
+</html>
