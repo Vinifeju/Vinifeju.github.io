@@ -58,43 +58,14 @@ class ModalWindow {
 
         modalHide(this.modal);
     }
-
-    _modalEffects(switchValue) {
-
-        this.modal.addEventListener('transitionend', () => {
-            hideHeader();
-            hideOverflow();
-        })
-
-        function hideHeader() {
-            if (switchValue) {
-                document.querySelector('.header').style['min-height'] = 0 + 'px';
-                document.querySelector('.header').style['max-height'] = 0 + 'px';
-            } else {
-                document.querySelector('.header').style['min-height'] = 100 + 'px';
-                document.querySelector('.header').style['max-height'] = 100 + 'px';
-            }
-        }
-
-        function hideOverflow() {
-            if (switchValue) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-    }
-
+    
     eventHandle() {
         this.element.addEventListener('click', e => {
             this._showModal();
-            this._modalEffects(true);
         });
 
         this.closeButton.addEventListener('click', e => {
             this._hideModal()
-            this._modalEffects(false);
         });
     }
 }
